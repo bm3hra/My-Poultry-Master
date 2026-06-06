@@ -1,0 +1,3482 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      My Poultry Master - बेस्ट मुर्गी पालन (Poultry Farming) वेबसाइट | ब्रॉयलर,
+      लेयर, देसी
+    </title>
+    <meta
+      name="description"
+      content="My Poultry Master भारत की बेस्ट मुर्गी पालन (Poultry Farming) वेबसाइट है। ब्रॉयलर, लेयर, देसी मुर्गी, कड़कनाथ की जानकारी, FCR कैलकुलेटर, मंडी भाव और PoultryGPT AI से जुड़े।"
+    />
+    <meta
+      name="keywords"
+      content="Murgi Palan, Poultry Farming in India, Broiler Farming, Layer Farming, Desi Murga, Kadaknath, Kuroiler, FCR Calculator, Shed Space Calculator, Poultry Diseases, My Poultry Master, मुर्गी पालन, पोल्ट्री फार्मिंग"
+    />
+    <meta name="author" content="My Poultry Master" />
+
+    <!-- Open Graph (For Social Media Sharing) -->
+    <meta
+      property="og:title"
+      content="My Poultry Master - भारत की नंबर 1 मुर्गी पालन वेबसाइट"
+    />
+    <meta
+      property="og:description"
+      content="ब्रॉयलर, लेयर, और देसी मुर्गी का बिजनेस स्मार्ट तरीके से करें। FCR कैलकुलेटर और Poultry AI का उपयोग करें।"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.poultrymaster.in/" />
+    <meta
+      property="og:image"
+      content="https://www.poultrymaster.in/images/poultry-og.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.poultrymaster.in/" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .gpt-tab-btn {
+        background: var(--gray-200);
+        color: var(--dark);
+        border-radius: 8px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .gpt-tab-btn.active {
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 4px 10px var(--primary-alpha);
+      }
+      .gpt-panel {
+        display: none;
+        animation: fadeIn 0.5s ease;
+      }
+      .gpt-panel.active {
+        display: block;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .upload-box {
+        border: 2px dashed #cbd5e1;
+        border-radius: 12px;
+        padding: 40px 20px;
+        text-align: center;
+        background: #f8fafc;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .upload-box:hover {
+        border-color: var(--primary);
+        background: rgba(234, 88, 12, 0.05);
+      }
+      .record-btn {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #ef4444;
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        transition: 0.3s;
+      }
+      .record-btn:hover {
+        transform: scale(1.05);
+      }
+      .record-btn.recording {
+        animation: pulseRecord 1s infinite;
+      }
+      @keyframes pulseRecord {
+        0% {
+          box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 20px rgba(239, 68, 68, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo text-primary">
+          <i class="fa-solid fa-feather-pointed"></i> My
+          <span>Poultry</span> Master
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">होम</a></li>
+          <li><a href="#features">फीचर्स</a></li>
+          <li><a href="#breeds">नस्लें</a></li>
+          <li><a href="#tools">टूल्स</a></li>
+          <li><a href="#poultrygpt">PoultryGPT</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 15px">
+          <div
+            class="weather-widget text-primary"
+            style="
+              background: var(--primary-alpha);
+              padding: 8px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+            "
+          >
+            <i class="fa-solid fa-temperature-half"></i> <span>39°C</span>
+          </div>
+          <a
+            href="#"
+            onclick="
+              document.getElementById('loginModal').style.display = 'flex'
+            "
+            class="btn btn-primary nav-btn glow-effect"
+            >किसान डैशबोर्ड</a
+          >
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Heat Stress Alert -->
+    <div
+      id="heat-alert"
+      class="heat-alert-bar"
+      style="
+        background: var(--primary-dark);
+        color: white;
+        text-align: center;
+        padding: 12px;
+        font-weight: bold;
+        position: relative;
+        z-index: 100;
+        margin-top: 70px;
+      "
+    >
+      ⚠️
+      <span class="blink">गंभीर गर्मी की चेतावनी (राजस्थान/लोकल):</span> तापमान
+      39°C है। कृपया स्प्रिंकलर चालू करें, पानी में इलेक्ट्रोलाइट्स मिलाएं और
+      दाना देना रोकें!
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero" style="padding-top: 60px">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal-left">
+          <div
+            class="badge glass-pill"
+            style="border-color: var(--primary-alpha)"
+          >
+            <span class="pulse-dot"></span> पोल्ट्री विशेषज्ञों द्वारा प्रमाणित
+          </div>
+          <h1 class="hero-title">
+            भारत का पहला <br /><span class="text-gradient"
+              >स्मार्ट मुर्गी प्लेटफॉर्म</span
+            >
+          </h1>
+          <p class="hero-subtitle">
+            अब अपने बैच को ट्रैक करें, FCR सुधारें और PoultryGPT से हर समस्या का
+            समाधान पाएं - बिल्कुल वैज्ञानिक तरीके से।
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="#"
+              onclick="
+                document.getElementById('registerModal').style.display = 'flex'
+              "
+              class="btn btn-primary btn-large glow-effect"
+              style="border: none"
+            >
+              <i class="fa-solid fa-user-plus"></i> अपना फार्म रजिस्टर करें
+            </a>
+            <a
+              href="https://play.google.com/store/apps/dev?id=7882651542675618933"
+              target="_blank"
+              class="btn btn-secondary btn-large glass-btn"
+            >
+              <i class="fa-brands fa-google-play"></i> ऐप डाउनलोड करें
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-right">
+          <div
+            class="floating-card glass-card card-1"
+            style="top: 10%; right: 10%"
+          >
+            <div
+              class="icon-circle"
+              style="background: var(--primary-alpha); color: var(--primary)"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="card-text">
+              <h4>बेहतर FCR</h4>
+              <span>मुनाफा बढ़ाएं</span>
+            </div>
+          </div>
+          <div
+            class="floating-card glass-card card-2"
+            style="bottom: 10%; left: -10%"
+          >
+            <div
+              class="icon-circle"
+              style="background: var(--primary-alpha); color: var(--secondary)"
+            >
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="card-text">
+              <h4>PoultryGPT</h4>
+              <span>AI पोल्ट्री डॉक्टर</span>
+            </div>
+          </div>
+          <div
+            style="
+              width: 100%;
+              height: 350px;
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: 0 10px 30px var(--primary-alpha);
+            "
+          >
+            <img
+              src="images/hero_rooster.png"
+              alt="Hero Rooster"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title">
+            पोल्ट्री फार्मिंग के <span class="text-gradient">सुपर फीचर्स</span>
+          </h2>
+          <p class="section-desc">
+            वैज्ञानिक डेटा और AI की मदद से अपने फार्म को सुरक्षित और लाभदायक
+            बनाएं।
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+                border-bottom: 2px solid #86efac;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #166534; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-chart-pie"></i> 1. बैच और दाने का हिसाब
+                (FCR)
+              </h3>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  color: #14532d;
+                "
+              >
+                अपने बैच के दाने की खपत और FCR (Feed Conversion Ratio) रोज़ाना
+                हिसाब रखें। 1 किलो वजन बढ़ाने में कितना दाना लगा, तुरंत जानें।
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="calculator-wrapper glass-card reveal-up"
+            style="transition-delay: 0.1s"
+          >
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #fee2e2, #fecaca);
+                border-bottom: 2px solid #fca5a5;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #b91c1c; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-heart-pulse"></i> 2. बीमारी और मृत्यु की
+                चेतावनी
+              </h3>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  color: #7f1d1d;
+                "
+              >
+                मुर्गियों की मृत्यु दर और बीमारियों (जैसे CRD, रानीखेत) पर नज़र
+                रखें। 3% से ज्यादा मृत्यु होने पर तुरंत खतरे की चेतावनी (Red
+                Alert) पाएं।
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="calculator-wrapper glass-card reveal-up"
+            style="transition-delay: 0.2s"
+          >
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #fef4c3, #fde68a);
+                border-bottom: 2px solid #fcd34d;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #b45309; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-egg"></i> 3. अंडा उत्पादन और हैचरी
+              </h3>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  color: #78350f;
+                "
+              >
+                लेयर फार्म के लिए अंडा उत्पादन (प्रतिशत में) और हैचरी के लिए
+                21-दिन का मशीन (इन्क्यूबेशन) कैलेंडर।
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="calculator-wrapper glass-card reveal-up"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+                border-bottom: 2px solid #7dd3fc;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #0369a1; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-shop"></i> 4. पोल्ट्री मंडी (खरीद-बिक्री)
+              </h3>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <p
+                style="
+                  margin: 0;
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  color: #0c4a6e;
+                "
+              >
+                पोल्ट्री से जुड़ा हर सामान खरीदें और बेचें:
+                <b>चूजे, ब्रॉयलर, लेयर मुर्गी, दाना</b> और <b>उपकरण (बर्तन)</b>।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chicken Breeds (All types of chicken) -->
+    <section id="breeds" class="section-padding" style="background: white">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title">
+            मुर्गियों की
+            <span class="text-gradient">प्रमुख नस्लें</span> (Poultry Breeds)
+          </h2>
+          <p class="section-desc">
+            मुर्गी पालन (Murgi Palan) शुरू करने से पहले सही नस्ल (Breed) का
+            चुनाव करना सबसे जरूरी है।
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+          "
+        >
+          <div
+            class="feature-card glass-card reveal-up"
+            style="padding: 25px; border-top: 4px solid var(--primary)"
+          >
+            <img
+              src="images/broiler.png?v=3"
+              alt="Broiler"
+              style="
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 15px;
+              "
+            />
+            <h3
+              style="
+                color: var(--primary-dark);
+                font-size: 1.5rem;
+                margin-top: 0;
+              "
+            >
+              <i class="fa-solid fa-drumstick-bite"></i> ब्रॉयलर (Broiler)
+            </h3>
+            <div style="margin-top: 15px">
+              <p style="margin-bottom: 8px">
+                <strong>उपयोग:</strong> मांस (Meat) के लिए
+              </p>
+              <p style="margin-bottom: 8px">
+                <strong>तैयार होने का समय:</strong> 35-40 दिन
+              </p>
+              <p style="margin-bottom: 8px; color: var(--gray-600)">
+                <strong>विशेषता:</strong> यह नस्ल बहुत तेजी से बढ़ती है। 40
+                दिनों में यह 2 से 2.5 किलो तक वजन प्राप्त कर लेती है। इनका FCR
+                (Feed Conversion Ratio) बहुत बेहतरीन होता है।
+              </p>
+              <p style="margin-bottom: 0">
+                <strong>उदाहरण:</strong> Cobb 500, Ross 308
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="feature-card glass-card reveal-up"
+            style="
+              transition-delay: 0.1s;
+              padding: 25px;
+              border-top: 4px solid var(--secondary);
+            "
+          >
+            <img
+              src="images/layer.png?v=3"
+              alt="Layer"
+              style="
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 15px;
+              "
+            />
+            <h3
+              style="
+                color: var(--primary-dark);
+                font-size: 1.5rem;
+                margin-top: 0;
+              "
+            >
+              <i class="fa-solid fa-egg"></i> लेयर (Layer)
+            </h3>
+            <div style="margin-top: 15px">
+              <p style="margin-bottom: 8px">
+                <strong>उपयोग:</strong> अंडा उत्पादन
+              </p>
+              <p style="margin-bottom: 8px">
+                <strong>अंडे देने की शुरुआत:</strong> 18-20 हफ्ते बाद
+              </p>
+              <p style="margin-bottom: 8px; color: var(--gray-600)">
+                <strong>विशेषता:</strong> ये मुर्गियाँ मुख्य रूप से अंडे देने के
+                लिए पाली जाती हैं। एक लेयर मुर्गी साल भर में 300 से 320 अंडे तक
+                देती है। इनका वजन कम होता है।
+              </p>
+              <p style="margin-bottom: 0">
+                <strong>उदाहरण:</strong> BV 300, Lohmann
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="feature-card glass-card reveal-up"
+            style="
+              transition-delay: 0.2s;
+              padding: 25px;
+              border-top: 4px solid #000;
+            "
+          >
+            <img
+              src="images/kadaknath.png?v=3"
+              alt="Kadaknath"
+              style="
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 15px;
+              "
+            />
+            <h3
+              style="
+                color: var(--primary-dark);
+                font-size: 1.5rem;
+                margin-top: 0;
+              "
+            >
+              <i class="fa-solid fa-feather-pointed"></i> कड़कनाथ / देसी
+            </h3>
+            <div style="margin-top: 15px">
+              <p style="margin-bottom: 8px">
+                <strong>उपयोग:</strong> प्रीमियम मांस और अंडे
+              </p>
+              <p style="margin-bottom: 8px">
+                <strong>तैयार होने का समय:</strong> 4 से 6 महीने
+              </p>
+              <p style="margin-bottom: 8px; color: var(--gray-600)">
+                <strong>विशेषता:</strong> इनमें बीमारियों से लड़ने की क्षमता
+                बहुत अधिक होती है। कड़कनाथ का मांस काला होता है और बाजार में
+                बहुत ऊंचे दाम पर बिकता है।
+              </p>
+              <p style="margin-bottom: 0">
+                <strong>उदाहरण:</strong> Kadaknath, Aseel, Vanaraja
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="feature-card glass-card reveal-up"
+            style="
+              transition-delay: 0.3s;
+              padding: 25px;
+              border-top: 4px solid var(--warning);
+            "
+          >
+            <img
+              src="images/desi_rooster.png?v=3"
+              alt="Desi Rooster"
+              style="
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 15px;
+              "
+            />
+            <h3
+              style="
+                color: var(--primary-dark);
+                font-size: 1.5rem;
+                margin-top: 0;
+              "
+            >
+              <i class="fa-solid fa-crow"></i> क्रॉयलर
+            </h3>
+            <div style="margin-top: 15px">
+              <p style="margin-bottom: 8px">
+                <strong>उपयोग:</strong> मांस और अंडे
+              </p>
+              <p style="margin-bottom: 8px">
+                <strong>तैयार होने का समय:</strong> 2 से 2.5 महीने
+              </p>
+              <p style="margin-bottom: 8px; color: var(--gray-600)">
+                <strong>विशेषता:</strong> यह दिखने में बिल्कुल देसी मुर्गी जैसी
+                होती है लेकिन इसका वजन देसी मुर्गियों से बहुत जल्दी बढ़ता है।
+                फ्री-रेंज (Free Range) के लिए सबसे उत्तम।
+              </p>
+              <p style="margin-bottom: 0">
+                <strong>उदाहरण:</strong> Kuroiler, Double FG
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desi Jugaad & Knowledge Section -->
+    <section
+      id="desi-tips"
+      class="section-padding"
+      style="background: var(--dark); color: white"
+    >
+      <div class="container">
+        <div class="section-header reveal-up" style="margin-bottom: 40px">
+          <h2 class="section-title" style="color: white">
+            पोल्ट्री <span class="text-gradient">देसी जुगाड़ और ज्ञान</span>
+          </h2>
+          <p class="section-desc" style="color: #cbd5e1">
+            खर्च कम करने और मुनाफा बढ़ाने की ग्रामीण और वैज्ञानिक तकनीकें
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+          "
+        >
+          <!-- Tip 1 -->
+          <div
+            class="feature-card glass-card reveal-up"
+            style="
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+            "
+          >
+            <h3 style="color: var(--primary)">
+              <i class="fa-solid fa-bug"></i> दीमक से हाई-प्रोटीन फीड
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6">
+              देसी मुर्गियों के लिए सबसे सस्ता हाई-प्रोटीन आहार दीमक है।
+              <br /><br /><strong>तरीका:</strong> पुराने सूती कपड़े, गोबर के
+              सूखे कंडे और पर्याप्त नमी वाले मटके को 2-3 दिन के लिए उलटकर रखने
+              से दीमक एकत्र हो जाती है, जो मुर्गियों की तेजी से वृद्धि में सहायक
+              है।
+            </p>
+          </div>
+
+          <!-- Tip 2 -->
+          <div
+            class="feature-card glass-card reveal-up"
+            style="
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              transition-delay: 0.1s;
+            "
+          >
+            <h3 style="color: var(--secondary)">
+              <i class="fa-solid fa-house-chimney"></i> डीप लिटर सिस्टम (Deep
+              Litter)
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6">
+              मुर्गियों के शेड को सूखा रखने के लिए फर्श पर 2 से 3 इंच मोटी
+              <strong>धान की भूसी</strong> या लकड़ी का बुरादा बिछाएं।
+              <br /><br /><strong>फायदा:</strong> यह नमी को सोख लेता है और
+              बीमारियों को दूर रखता है। समय-समय पर इसे हिलाते रहना चाहिए ताकि यह
+              सड़े नहीं।
+            </p>
+          </div>
+
+          <!-- Tip 3 -->
+          <div
+            class="feature-card glass-card reveal-up"
+            style="
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              transition-delay: 0.2s;
+            "
+          >
+            <h3 style="color: var(--warning)">
+              <i class="fa-solid fa-magnifying-glass-chart"></i> अंडों का भ्रूण
+              परीक्षण (Candling)
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6">
+              अंडे सेने (Hatching) के लिए कौन से अंडे सही हैं, इसका पता लगाने के
+              लिए <strong>कैण्डलिंग</strong> करें। <br /><br />अंधेरे कमरे में
+              अंडे के पीछे टॉर्च की रोशनी डालें। यदि अंदर लाल नसें और भ्रूण
+              (Dark Spot) दिखाई दे, तो वह अंडा स्वस्थ और चूजा निकालने योग्य है।
+            </p>
+          </div>
+        </div>
+
+        <!-- Comparison Table from Book -->
+        <div
+          style="
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          "
+          class="reveal-up"
+        >
+          <h3
+            style="
+              color: white;
+              font-size: 1.5rem;
+              margin-top: 0;
+              text-align: center;
+              margin-bottom: 20px;
+            "
+          >
+            <i class="fa-solid fa-code-compare"></i> मुर्गियों की तुलना
+            (ब्रॉयलर, लेयर और देसी)
+          </h3>
+          <div style="overflow-x: auto">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                text-align: left;
+                background: rgba(0, 0, 0, 0.2);
+                color: white;
+              "
+            >
+              <thead>
+                <tr
+                  style="
+                    background: rgba(255, 255, 255, 0.1);
+                    border-bottom: 2px solid var(--primary);
+                  "
+                >
+                  <th style="padding: 12px 15px; color: var(--primary)">
+                    विशेषता
+                  </th>
+                  <th style="padding: 12px 15px; color: var(--primary)">
+                    ब्रॉयलर (Broiler)
+                  </th>
+                  <th style="padding: 12px 15px; color: var(--primary)">
+                    लेयर (Layer)
+                  </th>
+                  <th style="padding: 12px 15px; color: var(--primary)">
+                    देसी (Desi)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1)">
+                  <td style="padding: 12px 15px; font-weight: bold">
+                    उत्पादन क्षमता
+                  </td>
+                  <td style="padding: 12px 15px">
+                    1.5 माह में 1.5 से 2 किलो वजन
+                  </td>
+                  <td style="padding: 12px 15px">
+                    300 से 325 अंडे (प्रति वर्ष)
+                  </td>
+                  <td style="padding: 12px 15px">
+                    30-40 अंडे (प्रति वर्ष), 6-8 माह में 1 किलो वजन
+                  </td>
+                </tr>
+                <tr
+                  style="
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    background: rgba(255, 255, 255, 0.05);
+                  "
+                >
+                  <td style="padding: 12px 15px; font-weight: bold">
+                    पालन का उद्देश्य
+                  </td>
+                  <td style="padding: 12px 15px">केवल मांस के लिए</td>
+                  <td style="padding: 12px 15px">मुख्य रूप से अंडों के लिए</td>
+                  <td style="padding: 12px 15px">
+                    मांस एवं अंडों दोनों के लिए (स्वादिष्ट व पौष्टिक)
+                  </td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1)">
+                  <td style="padding: 12px 15px; font-weight: bold">
+                    रोग प्रतिरोधक क्षमता
+                  </td>
+                  <td style="padding: 12px 15px; color: var(--warning)">
+                    कम होती है
+                  </td>
+                  <td style="padding: 12px 15px; color: var(--warning)">
+                    कम होती है
+                  </td>
+                  <td
+                    style="
+                      padding: 12px 15px;
+                      color: #16a34a;
+                      font-weight: bold;
+                    "
+                  >
+                    ग्रामीण परिवेश में बहुत अधिक
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 15px; font-weight: bold">
+                    आवास और आहार
+                  </td>
+                  <td style="padding: 12px 15px">
+                    24 घंटे मुर्गी घर में (दाना-पानी उपलब्ध)
+                  </td>
+                  <td style="padding: 12px 15px">
+                    24 घंटे मुर्गी घर में (दाना-पानी उपलब्ध)
+                  </td>
+                  <td style="padding: 12px 15px">
+                    खुले आंगन में, अपना आहार स्वयं भी जुटाती हैं
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Super Tools / Calculators -->
+    <section
+      id="tools"
+      class="tools section-padding"
+      style="background: rgba(243, 244, 246, 0.5)"
+    >
+      <div class="container">
+        <div class="section-header reveal-up" style="margin-bottom: 40px">
+          <h2 class="section-title">
+            पोल्ट्री <span class="text-gradient">सुपर टूल्स (Top 10)</span>
+          </h2>
+          <p class="section-desc">
+            प्रोफेशनल फार्मिंग के लिए स्मार्ट कैलकुलेटर्स और टूल्स
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+          "
+        >
+          <!-- 1. मुनाफा कैलकुलेटर -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+                border-bottom: 2px solid #86efac;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #166534; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-sack-dollar"></i> 1. मुनाफा कैलकुलेटर
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #14532d">
+                ब्रॉयलर बैच का अनुमानित शुद्ध मुनाफ़ा
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>चूजों की संख्या:</label>
+                <input
+                  type="number"
+                  id="calc1_birds"
+                  value="1000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>औसत वजन प्रति पक्षी (Kg):</label>
+                <input
+                  type="number"
+                  id="calc1_avgwt"
+                  value="2.0"
+                  step="0.1"
+                  min="0.1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>मंडी भाव प्रति किलो (₹):</label>
+                <input
+                  type="number"
+                  id="calc1_rate"
+                  value="110"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcProfit()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #16a34a;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res1"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 2. दाने का हिसाब (FCR) -->
+          <div
+            class="calculator-wrapper glass-card reveal-up"
+            style="transition-delay: 0.1s"
+          >
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+                border-bottom: 2px solid #7dd3fc;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #0369a1; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-scale-balanced"></i> 2. दाने का हिसाब
+                (FCR)
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #0c4a6e">
+                Feed Conversion Ratio
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल दाना खाया (Kg):</label>
+                <input
+                  type="number"
+                  id="calc2_feed"
+                  value="1500"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>कुल लाइव वजन (Kg):</label>
+                <input
+                  type="number"
+                  id="calc2_weight"
+                  value="1000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcFCR()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #0284c7;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res2"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 3. मृत्यु दर कैलकुलेटर -->
+          <div
+            class="calculator-wrapper glass-card reveal-up"
+            style="transition-delay: 0.2s"
+          >
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #fee2e2, #fecaca);
+                border-bottom: 2px solid #fca5a5;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #b91c1c; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-skull-crossbones"></i> 3. मृत्यु दर
+                कैलकुलेटर
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #7f1d1d">
+                मृत्यु दर का प्रतिशत
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल चूजे (Start):</label>
+                <input
+                  type="number"
+                  id="calc3_total"
+                  value="1000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>मरे हुए पक्षी (Dead):</label>
+                <input
+                  type="number"
+                  id="calc3_dead"
+                  value="25"
+                  min="0"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcMortality()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #dc2626;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res3"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 4. दाना खर्च कैलकुलेटर -->
+          <div
+            class="calculator-wrapper glass-card reveal-up"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #fef08a, #fde047);
+                border-bottom: 2px solid #facc15;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #a16207; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-coins"></i> 4. दाना खर्च कैलकुलेटर
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #713f12">
+                प्रति मुर्गी दाना खर्च
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल दाना (Kg):</label>
+                <input
+                  type="number"
+                  id="calc4_feed"
+                  value="3000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>दाने का भाव (₹/Kg):</label>
+                <input
+                  type="number"
+                  id="calc4_price"
+                  value="40"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>कुल पक्षी:</label>
+                <input
+                  type="number"
+                  id="calc4_birds"
+                  value="1000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcFeedCost()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #ca8a04;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res4"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 5. पानी की जरूरत -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #cffafe, #a5f3fc);
+                border-bottom: 2px solid #67e8f9;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #0e7490; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-droplet"></i> 5. पानी की जरूरत
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #164e63">
+                कुल पानी की आवश्यकता (Liters)
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल पक्षी:</label>
+                <input
+                  type="number"
+                  id="calc5_birds"
+                  value="1000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>उम्र (सप्ताह / Weeks):</label>
+                <input
+                  type="number"
+                  id="calc5_age"
+                  value="4"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcWater()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #06b6d4;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res5"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 6. Egg Production (Hen-Day) -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #fef4c3, #fde68a);
+                border-bottom: 2px solid #fcd34d;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #b45309; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-egg"></i> 6. अंडा उत्पादन %
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #78350f">
+                लेयर फार्म Hen-Day प्रतिशत
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल अंडे (आज):</label>
+                <input
+                  type="number"
+                  id="calc6_eggs"
+                  value="850"
+                  min="0"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>जीवित मुर्गियां (Live Birds):</label>
+                <input
+                  type="number"
+                  id="calc6_birds"
+                  value="1000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcEggProduction()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #d97706;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res6"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 7. प्रति अंडा दाना खर्च -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+                border-bottom: 2px solid #d8b4fe;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #6b21a8; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-cookie-bite"></i> 7. प्रति अंडा दाना खर्च
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #4c1d95">
+                1 अंडे के लिए लगा दाना
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल दाना खाया (Gram):</label>
+                <input
+                  type="number"
+                  id="calc7_feed"
+                  value="115000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>कुल उत्पादित अंडे:</label>
+                <input
+                  type="number"
+                  id="calc7_eggs"
+                  value="850"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcFeedPerEgg()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #9333ea;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res7"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 8. Vaccination Reminder -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+                border-bottom: 2px solid #5eead4;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #0f766e; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-syringe"></i> 8. टीकाकरण कैलेंडर
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #115e59">
+                ऑटो टीका कैलेंडर
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>बैच आने की तारीख:</label>
+                <input
+                  type="date"
+                  id="calc8_date"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>पक्षी का प्रकार:</label>
+                <select
+                  id="calc8_type"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                >
+                  <option value="broiler">Broiler (ब्रॉयलर)</option>
+                  <option value="layer">Layer (लेयर)</option>
+                </select>
+              </div>
+              <button
+                onclick="calcVaccine()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #0d9488;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                शेड्यूल बनाएं
+              </button>
+              <div
+                id="res8"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  font-size: 0.9rem;
+                  text-align: left;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 9. लागत और मुनाफा (ROI) -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+                border-bottom: 2px solid #a5b4fc;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #4338ca; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-chart-pie"></i> 9. लागत और मुनाफा (ROI)
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #312e81">
+                Return on Investment
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>कुल निवेश (Total Investment):</label>
+                <input
+                  type="number"
+                  id="calc9_inv"
+                  value="200000"
+                  min="1"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <div class="input-group" style="margin-top: 15px">
+                <label>शुद्ध मुनाफ़ा (Net Profit):</label>
+                <input
+                  type="number"
+                  id="calc9_profit"
+                  value="40000"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                />
+              </div>
+              <button
+                onclick="calcROI()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #4f46e5;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                हिसाब लगाएं
+              </button>
+              <div
+                id="res9"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- 10. Disease Diagnosis Tool -->
+          <div class="calculator-wrapper glass-card reveal-up">
+            <div
+              class="calc-header"
+              style="
+                background: linear-gradient(135deg, #ffe4e6, #fecdd3);
+                border-bottom: 2px solid #fda4af;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+              "
+            >
+              <h3 style="color: #be123c; margin: 0; font-size: 1.2rem">
+                <i class="fa-solid fa-stethoscope"></i> 10. Disease Diagnosis
+              </h3>
+              <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #881337">
+                लक्षण चुनें और बीमारी जानें
+              </p>
+            </div>
+            <div class="calc-body" style="padding: 20px">
+              <div class="input-group">
+                <label>लक्षण (Symptoms):</label>
+                <select
+                  id="calc10_symp"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    margin-top: 5px;
+                  "
+                >
+                  <option value="crd">खांसी, घर-घर की आवाज़ (Snicking)</option>
+                  <option value="nd">गर्दन टेढ़ी, हरी-सफेद बीट</option>
+                  <option value="ibd">
+                    सुस्ती, सफ़ेद पानी जैसी बीट (Gumboro)
+                  </option>
+                  <option value="cocc">खूनी/लाल बीट, पंख गिराना</option>
+                </select>
+              </div>
+              <button
+                onclick="calcDisease()"
+                class="btn btn-primary w-100 glow-effect"
+                style="
+                  margin-top: 20px;
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 1.1rem;
+                  border: none;
+                  border-radius: 8px;
+                  background: #e11d48;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                Diagnose
+              </button>
+              <div
+                id="res10"
+                style="
+                  display: none;
+                  margin-top: 15px;
+                  font-size: 0.95rem;
+                  text-align: left;
+                  background: #fff1f2;
+                  padding: 10px;
+                  border-radius: 8px;
+                  border: 1px solid #fecdd3;
+                  color: #9f1239;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vaccination Timeline -->
+    <section id="vaccination" class="section-padding">
+      <!-- Omitted for brevity in code snippet reading but kept in actual file as earlier -->
+      <div class="container">
+        <div class="section-header reveal-up" style="margin-bottom: 40px">
+          <h2 class="section-title">
+            पोल्ट्री <span class="text-gradient">वैक्सीनेशन टाइमलाइन</span>
+          </h2>
+          <p class="section-desc">
+            बीमारियों से बचाव के लिए सही समय पर सही टीका (ब्रॉयलर)
+          </p>
+        </div>
+
+        <div
+          class="timeline"
+          style="position: relative; max-width: 600px; margin: 0 auto"
+        >
+          <div
+            style="
+              border-left: 3px solid var(--primary);
+              padding-left: 20px;
+              margin-left: 20px;
+            "
+          >
+            <div
+              style="position: relative; margin-bottom: 30px"
+              class="reveal-up"
+            >
+              <div
+                style="
+                  position: absolute;
+                  left: -29px;
+                  top: 0;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background: var(--primary);
+                  border: 3px solid white;
+                  box-shadow: 0 0 0 3px var(--primary-alpha);
+                "
+              ></div>
+              <h4 style="color: var(--primary-dark); margin: 0">
+                Day 1 (हैचरी में)
+              </h4>
+              <p style="margin: 5px 0; font-weight: bold">
+                Marek's Disease Vaccine
+              </p>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--gray-600)">
+                गर्दन के नीचे इंजेक्शन द्वारा।
+              </p>
+            </div>
+            <div
+              style="position: relative; margin-bottom: 30px"
+              class="reveal-up"
+            >
+              <div
+                style="
+                  position: absolute;
+                  left: -29px;
+                  top: 0;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background: var(--secondary);
+                  border: 3px solid white;
+                  box-shadow: 0 0 0 3px var(--primary-alpha);
+                "
+              ></div>
+              <h4 style="color: var(--primary-dark); margin: 0">Day 5 - 7</h4>
+              <p style="margin: 5px 0; font-weight: bold">
+                Lasota (F1) - रानीखेत (ND)
+              </p>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--gray-600)">
+                आँख या नाक में एक बूंद।
+              </p>
+            </div>
+            <div
+              style="position: relative; margin-bottom: 30px"
+              class="reveal-up"
+            >
+              <div
+                style="
+                  position: absolute;
+                  left: -29px;
+                  top: 0;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background: var(--warning);
+                  border: 3px solid white;
+                  box-shadow: 0 0 0 3px var(--primary-alpha);
+                "
+              ></div>
+              <h4 style="color: var(--primary-dark); margin: 0">Day 12 - 14</h4>
+              <p style="margin: 5px 0; font-weight: bold">
+                IBD (Gumboro) - गम्बोरो
+              </p>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--gray-600)">
+                पीने के पानी में मिलाकर दें।
+              </p>
+            </div>
+            <div
+              style="position: relative; margin-bottom: 10px"
+              class="reveal-up"
+            >
+              <div
+                style="
+                  position: absolute;
+                  left: -29px;
+                  top: 0;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background: var(--primary-dark);
+                  border: 3px solid white;
+                  box-shadow: 0 0 0 3px var(--primary-alpha);
+                "
+              ></div>
+              <h4 style="color: var(--primary-dark); margin: 0">Day 21 - 24</h4>
+              <p style="margin: 5px 0; font-weight: bold">
+                Lasota Booster - रानीखेत (बूस्टर)
+              </p>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--gray-600)">
+                पीने के पानी में मिलाकर दें।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Poultry Doctor (PoultryGPT) -->
+    <section id="poultrygpt" class="about section-padding">
+      <div class="container">
+        <div
+          class="about-container glass-card reveal-up"
+          style="
+            border: 2px solid var(--primary-alpha);
+            background: linear-gradient(
+              135deg,
+              rgba(255, 255, 255, 0.9),
+              rgba(245, 243, 255, 0.9)
+            );
+            padding: 40px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            align-items: stretch;
+          "
+        >
+          <div class="about-content">
+            <div
+              class="badge glass-pill"
+              style="
+                margin-bottom: 15px;
+                display: inline-block;
+                background: var(--primary-alpha);
+                color: var(--primary-dark);
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-weight: bold;
+              "
+            >
+              <i class="fa-solid fa-robot"></i> PoultryGPT 2.0
+            </div>
+            <h2
+              class="section-title"
+              style="font-size: 2.2rem; margin-bottom: 15px"
+            >
+              आपका 24x7 <span class="text-gradient">AI पोल्ट्री डॉक्टर</span>
+            </h2>
+            <p
+              class="about-desc"
+              style="
+                color: var(--gray-600);
+                line-height: 1.6;
+                margin-bottom: 25px;
+              "
+            >
+              बीमारी की फोटो खींचें, खांसने की आवाज रिकॉर्ड करें, या कोई भी सवाल
+              पूछें। AI तुरंत समाधान देगा।
+            </p>
+
+            <div
+              style="
+                background: white;
+                border-radius: 15px;
+                padding: 25px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+              "
+            >
+              <!-- AI Mode Tabs -->
+              <div
+                style="
+                  display: flex;
+                  background: #f8fafc;
+                  border-bottom: 1px solid #e2e8f0;
+                  border-radius: 12px 12px 0 0;
+                  overflow: hidden;
+                  margin: -25px -25px 25px -25px;
+                "
+              >
+                <button
+                  id="tab-text"
+                  class="gpt-tab-btn"
+                  onclick="switchGptTab('text')"
+                  style="
+                    flex: 1;
+                    padding: 20px 10px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                    color: var(--primary-dark);
+                    transition: 0.3s;
+                    border-bottom: 3px solid var(--primary);
+                  "
+                >
+                  <i class="fa-solid fa-keyboard"></i> टेक्स्ट चैट
+                </button>
+                <button
+                  id="tab-image"
+                  class="gpt-tab-btn"
+                  onclick="switchGptTab('image')"
+                  style="
+                    flex: 1;
+                    padding: 20px 10px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                    color: var(--gray-500);
+                    transition: 0.3s;
+                    border-bottom: 3px solid transparent;
+                  "
+                >
+                  <i class="fa-solid fa-camera"></i> बीट स्कैनर
+                </button>
+                <button
+                  id="tab-audio"
+                  class="gpt-tab-btn"
+                  onclick="switchGptTab('audio')"
+                  style="
+                    flex: 1;
+                    padding: 20px 10px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                    color: var(--gray-500);
+                    transition: 0.3s;
+                    border-bottom: 3px solid transparent;
+                  "
+                >
+                  <i class="fa-solid fa-microphone"></i> ऑडियो AI
+                </button>
+              </div>
+
+              <!-- Panel 1: Text Chat -->
+              <div id="panel-text" class="gpt-panel active">
+                <p
+                  style="
+                    font-weight: bold;
+                    color: var(--gray-600);
+                    margin-bottom: 10px;
+                  "
+                >
+                  ये पूछ कर देखें:
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                    margin-bottom: 15px;
+                  "
+                >
+                  <span
+                    class="badge glass-pill"
+                    style="
+                      cursor: pointer;
+                      font-size: 0.85rem;
+                      padding: 6px 12px;
+                      border: 1px solid var(--gray-200);
+                      margin: 0;
+                    "
+                    onclick="
+                      setAiQuery('1000 ब्रॉयलर के लिए आज कितना दाना चाहिए?')
+                    "
+                    >"1000 ब्रॉयलर के लिए दाना..."</span
+                  >
+                  <span
+                    class="badge glass-pill"
+                    style="
+                      cursor: pointer;
+                      font-size: 0.85rem;
+                      padding: 6px 12px;
+                      border: 1px solid var(--gray-200);
+                      margin: 0;
+                    "
+                    onclick="
+                      setAiQuery('Layer birds का vaccination schedule बताओ')
+                    "
+                    >"Layer birds का वैक्सीनेशन..."</span
+                  >
+                </div>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="aiQuery"
+                    placeholder="यहाँ अपना सवाल लिखें..."
+                    style="
+                      border-radius: 12px;
+                      padding: 15px 20px;
+                      width: 100%;
+                      border: 1px solid #cbd5e1;
+                      outline: none;
+                      background: #f8fafc;
+                    "
+                  />
+                </div>
+                <button
+                  onclick="askPoultryGPT()"
+                  class="btn btn-primary glow-effect"
+                  style="
+                    margin-top: 15px;
+                    border: none;
+                    border-radius: 12px;
+                    padding: 12px 25px;
+                    width: 100%;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                  "
+                >
+                  <i class="fa-solid fa-paper-plane"></i> सवाल पूछें
+                </button>
+              </div>
+
+              <!-- Panel 2: Image / Droppings Scanner -->
+              <div id="panel-image" class="gpt-panel">
+                <p
+                  style="
+                    font-weight: bold;
+                    color: var(--gray-600);
+                    margin-bottom: 10px;
+                  "
+                >
+                  मुर्गियों की बीट (Droppings) की फोटो अपलोड करें:
+                </p>
+                <div class="upload-box" onclick="simulateImageUpload()">
+                  <i
+                    class="fa-solid fa-cloud-arrow-up"
+                    style="
+                      font-size: 3rem;
+                      color: var(--primary);
+                      margin-bottom: 15px;
+                    "
+                  ></i>
+                  <h4 style="margin: 0; color: var(--dark)">
+                    फोटो खींचें या अपलोड करें
+                  </h4>
+                  <p
+                    style="
+                      margin: 5px 0 0 0;
+                      font-size: 0.9rem;
+                      color: var(--gray-500);
+                    "
+                  >
+                    AI बीट का रंग देखकर बीमारी बताएगा
+                  </p>
+                </div>
+              </div>
+
+              <!-- Panel 3: Audio AI (Cough/Sneeze Scanner) -->
+              <div id="panel-audio" class="gpt-panel">
+                <p
+                  style="
+                    font-weight: bold;
+                    color: var(--gray-600);
+                    margin-bottom: 10px;
+                    text-align: center;
+                  "
+                >
+                  शेड में मुर्गियों की आवाज़ रिकॉर्ड करें:
+                </p>
+                <div style="padding: 20px 0">
+                  <button
+                    id="recordBtn"
+                    class="record-btn"
+                    onclick="simulateAudioRecord()"
+                  >
+                    <i class="fa-solid fa-microphone"></i>
+                  </button>
+                  <p
+                    id="recordStatus"
+                    style="
+                      text-align: center;
+                      margin-top: 15px;
+                      font-weight: bold;
+                      color: var(--gray-600);
+                    "
+                  >
+                    रिकॉर्ड करने के लिए टैप करें
+                  </p>
+                </div>
+              </div>
+
+              <!-- AI Response Box (Shared across tabs) -->
+              <div
+                id="aiResponseBox"
+                style="
+                  display: none;
+                  margin-top: 25px;
+                  padding: 20px;
+                  border-radius: 12px;
+                  background: #fff7ed;
+                  border-left: 5px solid var(--primary);
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      background: var(--primary);
+                      color: white;
+                      border-radius: 50%;
+                      width: 30px;
+                      height: 30px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fa-solid fa-robot"></i>
+                  </div>
+                  <span
+                    style="
+                      font-weight: bold;
+                      color: var(--primary-dark);
+                      font-size: 1.1rem;
+                    "
+                    >PoultryGPT:</span
+                  >
+                </div>
+                <p
+                  id="aiResponseText"
+                  style="color: var(--dark); line-height: 1.6; margin: 0"
+                ></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side Graphic -->
+          <div
+            class="about-image"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              background: url(&quot;images/rooster.jpg&quot;) center/cover;
+              border-radius: 20px;
+              padding: 40px;
+              min-height: 400px;
+              position: relative;
+              overflow: hidden;
+              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                  to top,
+                  rgba(2, 6, 23, 0.9),
+                  rgba(234, 88, 12, 0.4)
+                );
+                z-index: 1;
+              "
+            ></div>
+
+            <div
+              style="
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                color: white;
+              "
+            >
+              <i
+                class="fa-solid fa-microscope"
+                style="
+                  font-size: 5rem;
+                  margin-bottom: 20px;
+                  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                "
+              ></i>
+              <h3 style="font-size: 2rem; margin-bottom: 10px">
+                AI Diagnostics
+              </h3>
+              <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.9)">
+                मुर्गियों की बीमारी को 99% सटीकता से पहचानें। बिना डॉक्टर के,
+                तुरंत इलाज।
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  gap: 10px;
+                  justify-content: center;
+                  margin-top: 20px;
+                "
+              >
+                <span
+                  class="badge"
+                  style="
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    color: white;
+                  "
+                  ><i class="fa-solid fa-check-circle"></i> Coccidiosis</span
+                >
+                <span
+                  class="badge"
+                  style="
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    color: white;
+                  "
+                  ><i class="fa-solid fa-check-circle"></i> CRD (सांस की
+                  बीमारी)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help & Feedback Section -->
+    <section
+      id="help-feedback"
+      class="section-padding"
+      style="background: var(--light)"
+    >
+      <div class="container">
+        <div class="section-header reveal-up" style="margin-bottom: 40px">
+          <h2 class="section-title">
+            आपकी <span class="text-gradient">मदद और सुझाव</span>
+          </h2>
+          <p class="section-desc">आपके सवालों के जवाब और आपका कीमती फीडबैक</p>
+        </div>
+
+        <div
+          class="glass-card reveal-up"
+          style="
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+          "
+        >
+          <!-- Tabs Header -->
+          <div
+            style="
+              display: flex;
+              border-bottom: 1px solid #e2e8f0;
+              border-radius: 20px 20px 0 0;
+              overflow: hidden;
+            "
+          >
+            <button
+              class="hf-tab-btn active"
+              onclick="switchHfTab('feedback')"
+              style="
+                flex: 1;
+                padding: 20px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                border: none;
+                background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+                cursor: pointer;
+                color: #0369a1;
+                transition: 0.3s;
+                border-bottom: 3px solid #7dd3fc;
+                opacity: 1;
+              "
+            >
+              <i class="fa-solid fa-comment-dots"></i> आपका फीडबैक</button
+            ><button
+              class="hf-tab-btn"
+              onclick="switchHfTab('faq')"
+              style="
+                flex: 1;
+                padding: 20px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                border: none;
+                background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+                cursor: pointer;
+                color: #166534;
+                transition: 0.3s;
+                border-bottom: 3px solid transparent;
+                opacity: 0.6;
+              "
+            >
+              <i class="fa-solid fa-circle-question"></i> अक्सर पूछे जाने वाले
+              सवाल (FAQ)
+            </button>
+          </div>
+
+          <!-- FAQ Content -->
+          <div
+            id="hf-feedback"
+            class="hf-content active"
+            style="padding: 30px; display: block"
+          >
+            <p
+              style="
+                color: var(--gray-600);
+                margin-bottom: 20px;
+                text-align: center;
+              "
+            >
+              हमें अपने विचार बताएं ताकि हम My Poultry Master को आपके लिए और
+              बेहतर बना सकें।
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 15px">
+              <input
+                type="text"
+                placeholder="आपका शुभ नाम"
+                style="
+                  padding: 12px 15px;
+                  border-radius: 10px;
+                  border: 1px solid #cbd5e1;
+                  outline: none;
+                  width: 100%;
+                  font-family: inherit;
+                "
+                id="fbName"
+              />
+              <input
+                type="number"
+                placeholder="मोबाइल नंबर (वैकल्पिक)"
+                style="
+                  padding: 12px 15px;
+                  border-radius: 10px;
+                  border: 1px solid #cbd5e1;
+                  outline: none;
+                  width: 100%;
+                  font-family: inherit;
+                "
+                id="fbPhone"
+              />
+
+              <!-- Star Rating -->
+              <div style="text-align: center; margin: 10px 0">
+                <span
+                  style="
+                    color: var(--gray-400);
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                    transition: 0.2s;
+                  "
+                  onclick="setRating(1)"
+                  ><i class="fa-solid fa-star star-rate"></i
+                ></span>
+                <span
+                  style="
+                    color: var(--gray-400);
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                    transition: 0.2s;
+                  "
+                  onclick="setRating(2)"
+                  ><i class="fa-solid fa-star star-rate"></i
+                ></span>
+                <span
+                  style="
+                    color: var(--gray-400);
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                    transition: 0.2s;
+                  "
+                  onclick="setRating(3)"
+                  ><i class="fa-solid fa-star star-rate"></i
+                ></span>
+                <span
+                  style="
+                    color: var(--gray-400);
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                    transition: 0.2s;
+                  "
+                  onclick="setRating(4)"
+                  ><i class="fa-solid fa-star star-rate"></i
+                ></span>
+                <span
+                  style="
+                    color: var(--gray-400);
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                    transition: 0.2s;
+                  "
+                  onclick="setRating(5)"
+                  ><i class="fa-solid fa-star star-rate"></i
+                ></span>
+              </div>
+
+              <textarea
+                rows="4"
+                placeholder="आपकी राय या सुझाव..."
+                style="
+                  padding: 12px 15px;
+                  border-radius: 10px;
+                  border: 1px solid #cbd5e1;
+                  outline: none;
+                  width: 100%;
+                  font-family: inherit;
+                  resize: none;
+                "
+                id="fbMsg"
+              ></textarea>
+
+              <button
+                onclick="submitFeedback()"
+                class="btn btn-primary glow-effect"
+                style="
+                  border: none;
+                  padding: 15px;
+                  border-radius: 10px;
+                  font-size: 1.1rem;
+                  width: 100%;
+                  font-weight: bold;
+                  background: linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--secondary)
+                  );
+                  color: white;
+                  cursor: pointer;
+                  margin-top: 10px;
+                "
+              >
+                <i class="fa-solid fa-paper-plane"></i> फीडबैक भेजें
+              </button>
+            </div>
+          </div>
+          <div
+            id="hf-faq"
+            class="hf-content"
+            style="padding: 30px; display: none"
+          >
+            <div
+              class="faq-item"
+              style="
+                margin-bottom: 15px;
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                overflow: hidden;
+              "
+            >
+              <button
+                onclick="toggleFaq(this)"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  padding: 15px 20px;
+                  background: white;
+                  border: none;
+                  font-size: 1.05rem;
+                  font-weight: bold;
+                  color: var(--dark);
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                क्या यह My Poultry Master पूरी तरह से फ्री है?
+                <i class="fa-solid fa-chevron-down transition-transform"></i>
+              </button>
+              <div
+                class="faq-answer"
+                style="
+                  padding: 0 20px;
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: 0.3s;
+                  background: #f8fafc;
+                  color: var(--gray-600);
+                "
+              >
+                <p style="padding-bottom: 15px; margin: 0; margin-top: 10px">
+                  जी हाँ, यह प्लेटफॉर्म किसानों की मदद के लिए बनाया गया है और
+                  इसके सारे मुख्य टूल्स पूरी तरह से फ्री हैं।
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item"
+              style="
+                margin-bottom: 15px;
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                overflow: hidden;
+              "
+            >
+              <button
+                onclick="toggleFaq(this)"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  padding: 15px 20px;
+                  background: white;
+                  border: none;
+                  font-size: 1.05rem;
+                  font-weight: bold;
+                  color: var(--dark);
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                PoultryGPT कैसे काम करता है?
+                <i class="fa-solid fa-chevron-down transition-transform"></i>
+              </button>
+              <div
+                class="faq-answer"
+                style="
+                  padding: 0 20px;
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: 0.3s;
+                  background: #f8fafc;
+                  color: var(--gray-600);
+                "
+              >
+                <p style="padding-bottom: 15px; margin: 0; margin-top: 10px">
+                  PoultryGPT एक AI डॉक्टर है। आप इसमें मुर्गियों की बीमारी के
+                  लक्षण लिख सकते हैं या बीट की फोटो डाल सकते हैं, और यह आपको सही
+                  इलाज बताएगा।
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item"
+              style="
+                margin-bottom: 15px;
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                overflow: hidden;
+              "
+            >
+              <button
+                onclick="toggleFaq(this)"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  padding: 15px 20px;
+                  background: white;
+                  border: none;
+                  font-size: 1.05rem;
+                  font-weight: bold;
+                  color: var(--dark);
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                मैं अपने फार्म का फीड कन्वर्जन रेश्यो (FCR) कैसे सुधार सकता हूँ?
+                <i class="fa-solid fa-chevron-down transition-transform"></i>
+              </button>
+              <div
+                class="faq-answer"
+                style="
+                  padding: 0 20px;
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: 0.3s;
+                  background: #f8fafc;
+                  color: var(--gray-600);
+                "
+              >
+                <p style="padding-bottom: 15px; margin: 0; margin-top: 10px">
+                  अच्छी क्वालिटी का दाना, साफ पानी, सही तापमान और समय पर वैक्सीन
+                  देकर आप FCR को सुधार सकते हैं। हमारे FCR कैलकुलेटर का उपयोग
+                  करके आप इसे ट्रैक कर सकते हैं।
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback Content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Remarks Section -->
+    <section
+      id="testimonials"
+      class="section-padding"
+      style="background: white"
+    >
+      <div class="container">
+        <div class="section-header reveal-up" style="margin-bottom: 40px">
+          <h2 class="section-title">
+            किसानों के <span class="text-gradient">अनुभव</span>
+          </h2>
+          <p class="section-desc">
+            My Poultry Master का उपयोग करने वाले किसानों की राय
+          </p>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+          "
+        >
+          <!-- Testimonial 1 -->
+          <div
+            class="glass-card reveal-up"
+            style="
+              background: #f8fafc;
+              border: 1px solid #e2e8f0;
+              padding: 25px;
+              border-radius: 16px;
+              position: relative;
+            "
+          >
+            <i
+              class="fa-solid fa-quote-left"
+              style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+                color: #cbd5e1;
+                opacity: 0.5;
+              "
+            ></i>
+            <div style="color: #fbbf24; margin-bottom: 10px; font-size: 1.2rem">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p
+              style="
+                color: var(--gray-600);
+                font-style: italic;
+                line-height: 1.6;
+                margin-bottom: 20px;
+              "
+            >
+              "इस ऐप के PoultryGPT ने मेरे 500 ब्रॉयलर को मरने से बचा लिया!
+              बीमारी की सटीक जानकारी और तुरंत इलाज से मेरा बड़ा नुकसान होने से
+              बच गया।"
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: var(--primary);
+                  color: white;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              >
+                R
+              </div>
+              <div>
+                <h4 style="margin: 0; color: var(--primary-dark)">
+                  रमेश कुमार
+                </h4>
+                <p
+                  style="margin: 0; font-size: 0.85rem; color: var(--gray-500)"
+                >
+                  पोल्ट्री किसान, हरियाणा
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="glass-card reveal-up"
+            style="
+              background: #f8fafc;
+              border: 1px solid #e2e8f0;
+              padding: 25px;
+              border-radius: 16px;
+              position: relative;
+              transition-delay: 0.1s;
+            "
+          >
+            <i
+              class="fa-solid fa-quote-left"
+              style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+                color: #cbd5e1;
+                opacity: 0.5;
+              "
+            ></i>
+            <div style="color: #fbbf24; margin-bottom: 10px; font-size: 1.2rem">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p
+              style="
+                color: var(--gray-600);
+                font-style: italic;
+                line-height: 1.6;
+                margin-bottom: 20px;
+              "
+            >
+              "FCR और Profit Calculator के बिना मेरा काम अब अधूरा है। अब मैं हर
+              बैच का परफेक्ट हिसाब रख पाता हूँ और मेरा मुनाफा 20% तक बढ़ गया है!"
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: var(--secondary);
+                  color: white;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              >
+                S
+              </div>
+              <div>
+                <h4 style="margin: 0; color: var(--primary-dark)">
+                  सुनील पाटीदार
+                </h4>
+                <p
+                  style="margin: 0; font-size: 0.85rem; color: var(--gray-500)"
+                >
+                  ब्रॉयलर फार्मर, मध्य प्रदेश
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="glass-card reveal-up"
+            style="
+              background: #f8fafc;
+              border: 1px solid #e2e8f0;
+              padding: 25px;
+              border-radius: 16px;
+              position: relative;
+              transition-delay: 0.2s;
+            "
+          >
+            <i
+              class="fa-solid fa-quote-left"
+              style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+                color: #cbd5e1;
+                opacity: 0.5;
+              "
+            ></i>
+            <div style="color: #fbbf24; margin-bottom: 10px; font-size: 1.2rem">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p
+              style="
+                color: var(--gray-600);
+                font-style: italic;
+                line-height: 1.6;
+                margin-bottom: 20px;
+              "
+            >
+              "वैक्सीनेशन रिमाइंडर फीचर सबसे कमाल का है। पहले मैं हमेशा तारीखें
+              भूल जाता था, लेकिन अब यह ऐप मुझे सही समय पर याद दिला देता है।"
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: var(--warning);
+                  color: white;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              >
+                P
+              </div>
+              <div>
+                <h4 style="margin: 0; color: var(--primary-dark)">
+                  प्रकाश यादव
+                </h4>
+                <p
+                  style="margin: 0; font-size: 0.85rem; color: var(--gray-500)"
+                >
+                  लेयर फार्मर, उत्तर प्रदेश
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us & Download App CTA -->
+    <section
+      id="downloadApp"
+      class="cta-section section-padding"
+      style="
+        background: var(--dark-alt);
+        color: white;
+        margin-top: 60px;
+        border-radius: 40px 40px 0 0;
+        padding-bottom: 60px;
+      "
+    >
+      <div
+        class="container cta-container"
+        style="text-align: center; max-width: 800px; margin: 0 auto"
+      >
+        <div
+          class="badge glass-pill"
+          style="
+            margin-bottom: 20px;
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--warning);
+          "
+        >
+          <i class="fa-solid fa-shield-halved"></i> 100% विश्वसनीय
+        </div>
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px">
+          हम पर <span style="color: var(--primary)">भरोसा</span> क्यों करें?
+        </h2>
+        <p
+          style="
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 40px;
+          "
+        >
+          <strong>My Poultry Master</strong> कृषि विशेषज्ञों और अनुभवी पोल्ट्री
+          किसानों के अनुभव से तैयार किया गया है। हमारा उद्देश्य छोटे और बड़े सभी
+          पोल्ट्री किसानों को डेटा, टेक्नोलॉजी और AI की मदद से भारी नुकसान से
+          बचाना और उनका मुनाफा दोगुना करना है।
+        </p>
+
+        <div
+          class="stats"
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 50px;
+          "
+        >
+          <div>
+            <h3 style="font-size: 2.5rem; color: var(--primary); margin: 0">
+              50,000+
+            </h3>
+            <p style="color: #94a3b8; margin: 5px 0 0 0; font-weight: bold">
+              सफल किसान
+            </p>
+          </div>
+          <div>
+            <h3 style="font-size: 2.5rem; color: var(--secondary); margin: 0">
+              4.9/5
+            </h3>
+            <p style="color: #94a3b8; margin: 5px 0 0 0; font-weight: bold">
+              ऐप रेटिंग
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <h3 style="font-size: 1.8rem; margin-bottom: 15px">
+            आज ही अपने फार्म को स्मार्ट बनाएं!
+          </h3>
+          <p style="color: #cbd5e1; margin-bottom: 25px">
+            लाखों किसान पहले से ही My Poultry Master ऐप का लाभ उठा रहे हैं। अभी
+            फ्री में डाउनलोड करें और अपना पहला बैच रजिस्टर करें।
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary btn-large shadow-glow"
+            style="
+              border: none;
+              padding: 15px 30px;
+              font-size: 1.2rem;
+              border-radius: 30px;
+              background: var(--primary);
+            "
+          >
+            <i class="fa-brands fa-google-play"></i> Google Play से डाउनलोड करें
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      style="
+        background: #020617;
+        color: white;
+        padding: 40px 0 20px 0;
+        text-align: center;
+      "
+    >
+      <div class="container">
+        <h2 style="margin-bottom: 15px; color: var(--primary)">
+          <i class="fa-solid fa-feather-pointed"></i> My Poultry Master
+        </h2>
+        <p style="color: var(--gray-400); margin-bottom: 20px">
+          भारत के पोल्ट्री किसानों के लिए समर्पित पहला डिजिटल प्लेटफॉर्म।
+        </p>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+          "
+        >
+          <a href="#" style="color: white; font-size: 1.5rem"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" style="color: white; font-size: 1.5rem"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" style="color: white; font-size: 1.5rem"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <p>© 2026 My Poultry Master. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAOyx7jsknPhrAiBlaDz5sy5ezhraLdgRI",
+        authDomain: "my-poultry-master-46063.firebaseapp.com",
+        projectId: "my-poultry-master-46063",
+        storageBucket: "my-poultry-master-46063.firebasestorage.app",
+        messagingSenderId: "955775078104",
+        appId: "1:955775078104:android:f5a48724277d07b25091ad",
+      };
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      }
+      const firestoreDB = firebase.firestore();
+    </script>
+
+    <script>
+      // --- Shared Calculators logic from earlier ---
+      function calculateProfit() {
+        /* ... omitted for brevity ... */
+      }
+      function calculateFCR() {
+        /* ... omitted for brevity ... */
+      }
+      function calculateShed() {
+        /* ... omitted for brevity ... */
+      }
+
+      // Re-inserting the missing logic for completeness so the buttons still work
+      function calculateProfit() {
+        const birds = parseFloat(document.getElementById("profitBirds").value);
+        const rate = parseFloat(document.getElementById("profitRate").value);
+        if (!birds || !rate) return;
+        const totalProfit = birds * (2 * rate - (35 + 40 * 3.2 + 10));
+        const profitEl = document.getElementById("profitValue");
+        if (totalProfit >= 0) {
+          profitEl.innerText = "₹" + totalProfit.toLocaleString("en-IN");
+          profitEl.style.color = "#16a34a";
+        } else {
+          profitEl.innerText =
+            "-₹" + Math.abs(totalProfit).toLocaleString("en-IN");
+          profitEl.style.color = "#dc2626";
+        }
+        document.getElementById("profitResultSection").style.display = "block";
+      }
+
+      function calculateFCR() {
+        const feed = parseFloat(document.getElementById("fcrFeed").value);
+        const weight = parseFloat(document.getElementById("fcrWeight").value);
+        if (!feed || !weight || weight <= 0) return;
+        const fcr = feed / weight;
+        document.getElementById("fcrValue").innerText = fcr.toFixed(2);
+        const statusEl = document.getElementById("fcrStatus");
+        if (fcr <= 1.6) {
+          statusEl.innerText = "Excellent";
+          statusEl.style.color = "#16a34a";
+        } else if (fcr > 1.6 && fcr <= 1.8) {
+          statusEl.innerText = "Good";
+          statusEl.style.color = "#d97706";
+        } else {
+          statusEl.innerText = "Poor - चेक करें";
+          statusEl.style.color = "#dc2626";
+        }
+        document.getElementById("fcrResultSection").style.display = "block";
+      }
+
+      function calculateShed() {
+        const birds = parseFloat(document.getElementById("shedBirds").value);
+        const spacePerBird = parseFloat(
+          document.getElementById("birdType").value,
+        );
+        if (!birds || birds <= 0) return;
+        document.getElementById("shedValue").innerText = Math.ceil(
+          birds * spacePerBird,
+        ).toLocaleString("en-IN");
+        document.getElementById("shedResultSection").style.display = "block";
+      }
+
+      // --- Poultry GPT 2.0 Logic ---
+
+      function switchGptTab(tabName) {
+        // Update Buttons
+        document.querySelectorAll(".gpt-tab-btn").forEach((btn) => {
+          btn.style.color = "var(--gray-500)";
+          btn.style.borderBottom = "3px solid transparent";
+        });
+        const activeBtn = document.getElementById("tab-" + tabName);
+        if (activeBtn) {
+          activeBtn.style.color = "var(--primary-dark)";
+          activeBtn.style.borderBottom = "3px solid var(--primary)";
+        }
+
+        // Update Panels
+        document
+          .querySelectorAll(".gpt-panel")
+          .forEach((panel) => panel.classList.remove("active"));
+        document.getElementById("panel-" + tabName).classList.add("active");
+
+        // Hide previous results
+        document.getElementById("aiResponseBox").style.display = "none";
+      }
+
+      function setAiQuery(text) {
+        document.getElementById("aiQuery").value = text;
+      }
+
+      // 1. Text AI
+      function askPoultryGPT() {
+        const query = document.getElementById("aiQuery").value.toLowerCase();
+        if (!query.trim()) return;
+
+        showLoading("टेक्स्ट का विश्लेषण किया जा रहा है...");
+
+        setTimeout(() => {
+          let response = "";
+          if (query.includes("दाना") || query.includes("feed")) {
+            response =
+              "<b>1000 ब्रॉयलर (Day 21) के लिए फीड कैलकुलेशन:</b><br>आमतौर पर 21वें दिन एक ब्रॉयलर लगभग 100 ग्राम दाना खाता है।<br><b>कुल दाना:</b> 1000 x 100g = 100 Kg (2 बैग) स्टार्टर फीड।";
+          } else if (query.includes("vaccination") || query.includes("टीका")) {
+            response =
+              "<b>Layer Birds Vaccination:</b><br>• Day 5-7: Lasota (New Castle) - आँख में बूंद<br>• Day 14: IBD (Gumboro) - पानी में<br>• Day 24: Lasota Booster";
+          } else {
+            response =
+              "मैं PoultryGPT हूँ। मैं आपके फीड, बीमारी, वैक्सीन और बिज़नेस से जुड़े हर सवाल का वैज्ञानिक जवाब दे सकता हूँ।";
+          }
+          showResult(response);
+        }, 1500);
+      }
+
+      // 2. Image / Droppings Scanner Mock
+      function simulateImageUpload() {
+        showLoading(
+          "<i class='fa-solid fa-camera fa-shake'></i> फोटो अपलोड हो रही है... AI बीट के रंग की जांच कर रहा है...",
+        );
+
+        setTimeout(() => {
+          const response = `
+                    <div style="background: white; border-radius: 8px; padding: 15px; border-left: 4px solid #dc2626;">
+                        <p style="color: #dc2626; font-weight: bold; margin-bottom: 5px;"><i class="fa-solid fa-triangle-exclamation"></i> अलर्ट: खूनी/लाल बीट डिटेक्ट की गई!</p>
+                        <p style="margin-bottom: 10px;"><b>संभावित बीमारी:</b> कॉक्सीडियोसिस (Coccidiosis)</p>
+                        <p style="margin-bottom: 5px;"><b>प्राथमिक उपचार (AI सलाह):</b></p>
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li>पीने के पानी में <i>Amprolium (एमप्रोलियम)</i> दवा का इस्तेमाल करें।</li>
+                            <li>शेड के बिछावन (Litter) को सूखा रखें और नमी कम करें।</li>
+                        </ul>
+                    </div>
+                `;
+          showResult(response);
+        }, 2500);
+      }
+
+      // 3. Audio / Cough Scanner Mock
+      function simulateAudioRecord() {
+        const btn = document.getElementById("recordBtn");
+        const status = document.getElementById("recordStatus");
+
+        if (btn.classList.contains("recording")) return;
+
+        btn.classList.add("recording");
+        status.innerText =
+          "Listening... मुर्गियों की आवाज़ रिकॉर्ड हो रही है (10s)";
+        status.style.color = "#ef4444";
+
+        document.getElementById("aiResponseBox").style.display = "none";
+
+        // Simulate 3 seconds of recording
+        setTimeout(() => {
+          btn.classList.remove("recording");
+          status.innerText = "रिकॉर्डिंग पूरी हुई। AI स्कैन कर रहा है...";
+          status.style.color = "var(--primary)";
+
+          showLoading(
+            "<i class='fa-solid fa-wave-square fa-fade'></i> ऑडियो वेवफॉर्म का विश्लेषण किया जा रहा है...",
+          );
+
+          setTimeout(() => {
+            status.innerText = "रिकॉर्ड करने के लिए टैप करें";
+            status.style.color = "var(--gray-600)";
+
+            const response = `
+                        <div style="background: white; border-radius: 8px; padding: 15px; border-left: 4px solid #d97706;">
+                            <p style="color: #d97706; font-weight: bold; margin-bottom: 5px;"><i class="fa-solid fa-volume-high"></i> ऑडियो स्कैन रिज़ल्ट:</p>
+                            <p style="margin-bottom: 10px;"><b>पहचान:</b> 15% मुर्गियों में 'घर-घर' (Snicking/Gurgling) की आवाज डिटेक्ट हुई है।</p>
+                            <p style="margin-bottom: 5px;"><b>संभावित बीमारी:</b> CRD (Chronic Respiratory Disease) या प्रारंभिक श्वसन तनाव।</p>
+                            <p style="margin-bottom: 5px;"><b>AI सलाह:</b></p>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li>अमोनिया गैस का स्तर चेक करें और वेंटिलेशन बढ़ाएं।</li>
+                                <li>शाम के पानी में <i>Tylosin (टायलोसिन)</i> या <i>Enrofloxacin</i> दें।</li>
+                            </ul>
+                        </div>
+                    `;
+            showResult(response);
+          }, 2000);
+        }, 3000);
+      }
+
+      function showLoading(msg) {
+        const box = document.getElementById("aiResponseBox");
+        const text = document.getElementById("aiResponseText");
+        box.style.display = "block";
+        text.innerHTML = `<i><i class="fa-solid fa-spinner fa-spin" style="color:var(--primary);"></i> ${msg}</i>`;
+      }
+
+      function showResult(htmlContent) {
+        document.getElementById("aiResponseText").innerHTML = htmlContent;
+      }
+
+      // Feedback & FAQ Tabs
+      function switchHfTab(tab) {
+        const btns = document.querySelectorAll(".hf-tab-btn");
+        const contents = document.querySelectorAll(".hf-content");
+
+        btns.forEach((btn) => {
+          btn.style.opacity = "0.6";
+          btn.style.borderBottom = "3px solid transparent";
+        });
+        contents.forEach((content) => (content.style.display = "none"));
+
+        if (tab === "feedback") {
+          btns[0].style.opacity = "1";
+          btns[0].style.borderBottom = "3px solid #7dd3fc";
+          document.getElementById("hf-feedback").style.display = "block";
+        } else {
+          btns[1].style.opacity = "1";
+          btns[1].style.borderBottom = "3px solid #86efac";
+          document.getElementById("hf-faq").style.display = "block";
+        }
+      }
+
+      function toggleFaq(btn) {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector("i");
+        if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+          answer.style.maxHeight = "0px";
+          icon.style.transform = "rotate(0deg)";
+          btn.style.color = "var(--dark)";
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.style.transform = "rotate(180deg)";
+          btn.style.color = "var(--primary)";
+        }
+      }
+
+      let currentRating = 0;
+      function setRating(rating) {
+        currentRating = rating;
+        const stars = document.querySelectorAll(".star-rate");
+        stars.forEach((star, index) => {
+          if (index < rating) {
+            star.style.color = "#fbbf24"; // yellow
+          } else {
+            star.style.color = "var(--gray-400)";
+          }
+        });
+      }
+
+      async function submitFeedback() {
+        if (currentRating === 0) {
+          alert("कृपया रेटिंग (Stars) चुनें!");
+          return;
+        }
+
+        const name = document.getElementById("fbName").value;
+        const phone = document.getElementById("fbPhone").value;
+        const msg = document.getElementById("fbMsg").value;
+
+        try {
+          await firestoreDB.collection("feedback").add({
+            name: name,
+            phone: phone,
+            message: msg,
+            rating: currentRating,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+          });
+          alert("धन्यवाद! आपका फीडबैक हमारे डेटाबेस में सुरक्षित हो गया है।");
+          setRating(0);
+          document
+            .querySelectorAll("#hf-feedback input, #hf-feedback textarea")
+            .forEach((el) => (el.value = ""));
+        } catch (e) {
+          console.error(e);
+          alert("फीडबैक भेजने में समस्या आई।");
+        }
+      }
+
+      async function registerFarm() {
+        const name = document.getElementById("regName").value;
+        const phone = document.getElementById("regPhone").value;
+        const type = document.getElementById("regType").value;
+
+        if (!name || !phone) {
+          alert("कृपया नाम और मोबाइल नंबर भरें!");
+          return;
+        }
+
+        try {
+          await firestoreDB.collection("farmers").add({
+            name: name,
+            phone: phone,
+            farmType: type,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+          });
+          alert("बधाई हो! आपका फार्म सफलतापूर्वक रजिस्टर हो गया है।");
+          document.getElementById("registerModal").style.display = "none";
+          window.location.href = "dashboard.html";
+        } catch (e) {
+          console.error(e);
+          alert("रजिस्टर करने में समस्या आई।");
+        }
+      }
+
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+
+    <style>
+      .custom-modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(5px);
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background: white;
+        padding: 30px;
+        border-radius: 16px;
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+        position: relative;
+        animation: reveal-up 0.3s;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      }
+      .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--gray-600);
+      }
+      .modal-input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 20px;
+        border: 1px solid var(--gray-200);
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+    </style>
+
+    <div id="loginModal" class="custom-modal">
+      <div class="modal-content">
+        <span
+          class="close-btn"
+          onclick="document.getElementById('loginModal').style.display = 'none'"
+          >×</span
+        >
+        <div
+          style="font-size: 3rem; color: var(--primary); margin-bottom: 10px"
+        >
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+        <h2 style="color: var(--primary-dark); margin-bottom: 5px">
+          किसान लॉगिन
+        </h2>
+        <p style="color: var(--gray-600); margin-bottom: 20px">
+          डैशबोर्ड में जाने के लिए मोबाइल नंबर डालें
+        </p>
+        <input
+          type="number"
+          class="modal-input"
+          placeholder="मोबाइल नंबर (Mobile Number)"
+        />
+        <button
+          onclick="window.location.href = 'dashboard.html'"
+          class="btn btn-primary w-100 glow-effect"
+          style="
+            border: none;
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+          "
+        >
+          लॉगिन करें
+        </button>
+      </div>
+    </div>
+
+    <div id="registerModal" class="custom-modal">
+      <div class="modal-content">
+        <span
+          class="close-btn"
+          onclick="
+            document.getElementById('registerModal').style.display = 'none'
+          "
+          >×</span
+        >
+        <div
+          style="font-size: 3rem; color: var(--secondary); margin-bottom: 10px"
+        >
+          <i class="fa-solid fa-house-chimney"></i>
+        </div>
+        <h2 style="color: var(--primary-dark); margin-bottom: 5px">
+          नया फार्म बनाएँ
+        </h2>
+        <p style="color: var(--gray-600); margin-bottom: 20px">
+          मुर्गी पालन में सफलता का पहला कदम
+        </p>
+        <input
+          type="text"
+          class="modal-input"
+          placeholder="किसान का नाम"
+          style="margin-bottom: 10px"
+          id="regName"
+        />
+        <input
+          type="number"
+          class="modal-input"
+          placeholder="मोबाइल नंबर"
+          style="margin-bottom: 10px"
+          id="regPhone"
+        />
+        <select class="modal-input" style="margin-bottom: 20px" id="regType">
+          <option>आप क्या पालते हैं?</option>
+          <option>ब्रॉयलर (Broiler)</option>
+          <option>लेयर (Layer)</option>
+          <option>देसी / कड़कनाथ</option>
+        </select>
+        <button
+          onclick="registerFarm()"
+          class="btn btn-primary w-100 glow-effect"
+          style="
+            border: none;
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            background: var(--secondary);
+          "
+        >
+          रजिस्टर करें
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- Modals -->
